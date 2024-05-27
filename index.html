@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <section id="addStudent">
+            <input type="text" id="firstName">
+            <input type="text" id="lastName">
+            <button id="add">add</button>
+        </section>
+        <section id="addScore">
+            <select onchange="findSelectedOption(this)" id="student">
+                <option value=""></option>
+            </select>
+            <select onchange="findSelectedOptionCourse(this)" id="course">
+                <option value=""></option>
+                <option value="">html</option>
+                <option value="">css</option>
+                <option value="">js</option>
+            </select>
+            <input id="score" type="number">
+            <button id="set">set</button>
+        </section>
+        <section id="studentResult">
+            <div id="class"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
